@@ -1,0 +1,25 @@
+{
+  "name": "rest_api_node_ts_server",
+  "version": "1.0.0",
+  "description": "REST API's con Express y Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonnathan23/Full-stack-pern.git"
+  },
+  "keywords": [
+    "Apis",
+    "express",
+    "full_stack",
+    "typescript"
+  ],
+  "author": "Jonnathan Saquicela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonnathan23/Full-stack-pern/issues"
+  },
+  "homepage": "https://github.com/Jonnathan23/Full-stack-pern#readme"
+}
