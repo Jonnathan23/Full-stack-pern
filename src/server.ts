@@ -14,11 +14,11 @@ async function connectDB() {
         console.log(colors.red.bold('Error al conectar a la BD'))
     }
 }
-// Intancia de express
+// Express' instance
 connectDB()
 const server = express()
 
-// Leer datos de formularios
+// Read forms' data
 server.use(express.json())
 
 
