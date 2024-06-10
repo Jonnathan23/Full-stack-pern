@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { createProduct, deleteProduct, patchProduct, putProduct } from "./handlers/product";
 
 const router = Router()
 
@@ -6,27 +7,15 @@ const router = Router()
 router.get('/', (req, res) => {
     const aut = true
 
-    res.send('Desde GET')
+    res.json('Desde GET')
 })
 
-router.post('/', (req, res) => {
+router.post('/', createProduct )
 
-    res.send('Desde post')
-})
+router.put('/', putProduct )
 
-router.put('/', (req, res) => {
+router.delete('/', deleteProduct)
 
-    res.send('Desde PUT')
-})
-
-router.delete('/', (req, res) => {
-
-    res.send('Desde DELETE')
-})
-
-router.patch('/', (req, res) => {
-
-    res.send('Desde path')
-})
+router.patch('/', patchProduct)
 
 export default router

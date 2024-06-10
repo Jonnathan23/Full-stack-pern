@@ -6,7 +6,7 @@ import { Table, Column, Model, DataType, Default } from 'sequelize-typescript'
 
 class Products extends Model {
     @Column({
-        type: DataType.STRING(100)
+        type: DataType.STRING(100)        
     })
     name!: string
 
@@ -15,6 +15,7 @@ class Products extends Model {
     })
     price!: number
 
+    @Default(true)
     @Column({ type: DataType.BOOLEAN })
     availability!: boolean
 
