@@ -14,6 +14,7 @@ async function connectDB() {
         console.log(colors.red.bold('Error al conectar a la BD'))
     }
 }
+
 // Express' instance
 connectDB()
 const server = express()

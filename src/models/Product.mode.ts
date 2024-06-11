@@ -13,11 +13,11 @@ class Products extends Model {
     @Column({
         type: DataType.FLOAT(5, 2)
     })
-    price!: number
+    declare price: number
 
     @Default(true)
     @Column({ type: DataType.BOOLEAN })
-    availability!: boolean
+    declare availability: boolean
 
 }
 
